@@ -3,24 +3,23 @@
 
 /**
  * print_python_bytes - This prints the bytes information
- * @o: This is the python object
+ * @p: This is the python object
  * Return: no return
  */
-
-void print_python_bytes(PyObject *o)
+void print_python_bytes(PyObject *p)
 {
 	char *string;
-	long int size, o, limit;
+	long int size, i, limit;
 
 	printf("[.] bytes object info\n");
-	if (!PyBytes_Check(o))
+	if (!PyBytes_Check(p))
 	{
 		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 
-	size = ((PyVarObject *)(o))->ob_size;
-	string = ((PyBytesObject *)o)->ob_sval;
+	size = ((PyVarObject *)(p))->ob_size;
+	string = ((PyBytesObject *)p)->ob_sval;
 
 	printf("  size: %ld\n", size);
 	printf("  trying string: %s\n", string);
@@ -43,18 +42,18 @@ void print_python_bytes(PyObject *o)
 
 /**
  * print_python_list - This prints the list information
- * @o: This is the python object
+ * @p: This is the python object
  * Return: no return
  */
 
-void print_python_list(PyObject *o)
+void print_python_list(PyObject *p)
 {
 	long int size, i;
 	PyListObject *list;
 	PyObject *obj;
 
-	size = ((PyVarObject *)(o))->ob_size;
-	list = (PyListObject *)o;
+	size = ((PyVarObject *)(p))->ob_size;
+	list = (PyListObject *)p;
 
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %ld\n", size);
