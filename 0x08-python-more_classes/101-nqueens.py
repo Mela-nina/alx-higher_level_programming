@@ -20,7 +20,10 @@ def board_deepcopy(board):
 
 
 def get_solution(board):
-    """This will return the list of lists representation of a solved chessboard."""
+    """
+    This will return the list of lists representation
+    of a solved chessboard
+    """
     solution = []
     for s in range(len(board)):
         for d in range(len(board)):
