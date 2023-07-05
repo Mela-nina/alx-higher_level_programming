@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 
-This module is composed by a function that prints 2 new lines after ".?:" characters
+This module is composed by a function that prints
+2 new lines after ".?:" characters
 
 """
 
