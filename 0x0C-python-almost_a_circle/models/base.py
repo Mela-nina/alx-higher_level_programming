@@ -42,10 +42,12 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Writes the JSON serialization of a list of objects to a file
+        """Writes the JSON serialization of a
+list of objects to a file
 
         Args:
-            list_objs (list): This a list of inherited Base instances
+            list_objs (list): This a list of
+inherited Base instances
         """
         filename = cls.__name__ + ".json"
         with open(filename, "w") as jsonfile:
@@ -60,10 +62,12 @@ class Base:
         """Returns the deserialization of a JSON string
 
         Args:
-            json_string (str): This is A JSON str representation of a list of dicts
+            json_string (str): This is A JSON str
+representation of a list of dicts
         Returns:
             If json_string is None or empty - This is an empty list
-            Otherwise - This is the Python list represented by json_string
+            Otherwise - This is the Python list
+represented by json_string
         """
         if json_string is None or json_string == "[]":
             return []
@@ -74,7 +78,8 @@ class Base:
         """Returns class instantied from a dictionary of attributes
 
         Args:
-            **dictionary (dict): Key/value pairs of attributes to initialize
+            **dictionary (dict): Key/value pairs
+of attributes to initialize
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
@@ -86,7 +91,8 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Returs list of classes instantiated from a file of JSON strings
+        """Returs list of classes instantiated
+from a file of JSON strings
 
         Reads from `<cls.__name__>.json`
 
@@ -104,10 +110,12 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Writes the CSV serialization of a list of objects to a file
+        """Writes the CSV serialization of a list
+of objects to a file
 
         Args:
-            list_objs (list): This is a list of inherited Base instances
+            list_objs (list): This is a list
+of inherited Base instances
         """
         filename = cls.__name__ + ".csv"
         with open(filename, "w", newline="") as csvfile:
@@ -153,7 +161,8 @@ class Base:
         Args:
             list_rectangles (list): This is the list of
 Rectangle objects to draw
-            list_squares (list): This is the list of Square objects to draw
+            list_squares (list): This is the list of
+Square objects to draw
         """
         turt = turtle.Turtle()
         turt.screen.bgcolor("#b7312c")

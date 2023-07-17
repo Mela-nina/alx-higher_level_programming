@@ -147,8 +147,10 @@ class Rectangle(Base):
             assigns key/value argument to attributes
             kwargs is skipped if args is not empty
             Args:
-                *args -  This is the variable number of no-keyword args
-                **kwargs - This is the variable number of keyworded args
+                *args -  This is the variable number
+of no-keyword args
+                **kwargs - This is the variable number
+of keyworded args
         """
         if len(args) == 0:
             for key, val in kwargs.items():
