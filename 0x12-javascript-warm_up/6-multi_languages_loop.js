@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-//This is a script to print strings using a loop
+// This is a script to print strings using a loop
 
 let j;
 const myString = ['C is fun', 'Python is cool', 'JavaScript is amazing'];

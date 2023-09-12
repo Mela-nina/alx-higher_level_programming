@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-//This is a script that prints the addition of 2 integers
+// This is a script that prints the addition of 2 integers
 
 function add (a, b) {
   return a + b;

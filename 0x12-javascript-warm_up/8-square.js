@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-//This is a script that prints a square
+// This is a script that prints a square
 
 const size = Math.floor(Number(process.argv[2]));
 if (isNaN(size)) {
