@@ -1,4 +1,3 @@
 #!/bin/bash
-# This is a bash script that takes in a URL as an argument, send a 
-# GET request to the URL using curl, and display the body of the response
+# This sends a GET request to the URL using curl, and display the body of the response
 curl -sH "X-School-User-Id: 98" "$1"
